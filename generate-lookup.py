@@ -80,7 +80,7 @@ for sheet_name in DROP_SHEET_NAMES:
     # df.columns[1] # The index in the admin info sheet
     df_cleaned.columns = df_cleaned.iloc[0]
     df_cleaned = df_cleaned[df_cleaned.iloc[:, 0] != "Item"]
-    df_cleaned = df_cleaned[df_cleaned.iloc[:, 8] != "1P+1L+1T"].dropna(
+    df_cleaned = df_cleaned[df_cleaned.iloc[:, 8] != "Base"].dropna(
         axis=1, how="all"
     )
 
